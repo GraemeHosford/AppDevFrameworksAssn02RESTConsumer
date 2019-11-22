@@ -20,5 +20,12 @@
         <td th:text="*{job.jobPublishedDate}">Published</td>
     </tr>
 </table>
+
+<form class="userbids-form" method = "post" th:action="@{/viewbids}" th:object="${bidForm}">
+    <label th:for="*{userId}">
+        Enter user ID to view their bids<input name="userId" type="number" th:field="*{userId}"/>
+    </label>
+    <input type="submit" value="View Users Bids"/>
+</form>
 </body>
 </html>
