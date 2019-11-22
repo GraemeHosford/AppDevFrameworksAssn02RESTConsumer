@@ -1,4 +1,4 @@
-package graeme.hosford.rob.morgan.assignment02restconsumer.controllers;
+package graeme.hosford.rob.morgan.assignment02restconsumer.controllers.forms;
 
 public class BidForm {
     private long userId;

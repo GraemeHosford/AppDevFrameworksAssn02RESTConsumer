@@ -2,24 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Active Jobs</title>
+    <title>API Consumer</title>
 </head>
 <body>
-<table>
-    <tr>
-        <th>Job ID</th>
-        <th>Job Name</th>
-        <th>Job Description</th>
-        <th>Job Published</th>
-    </tr>
+<a href="/activejobs">View the active jobs</a>
 
-    <tr th:each="job : *{jobList}">
-        <td th:text="*{job.jobId}">ID</td>
-        <td th:text="*{job.jobName}">Name</td>
-        <td th:text="*{job.jobDescription}">Description</td>
-        <td th:text="*{job.jobPublishedDate}">Published</td>
-    </tr>
-</table>
+<p>Or enter a users id to view their bids</p>
 
 <form class="userbids-form" method = "post" th:action="@{/viewbids}" th:object="${bidForm}">
     <label th:for="*{userId}">

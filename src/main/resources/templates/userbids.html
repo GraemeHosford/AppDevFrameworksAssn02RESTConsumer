@@ -5,7 +5,8 @@
     <title>Bids</title>
 </head>
 <body>
-<table>
+<p th:if="*{#lists.isEmpty(userBidList)}">There were no bids found for the user ID you entered</p>
+<table th:unless="*{#lists.isEmpty(userBidList)}">
     <tr>
         <th>Bid ID</th>
         <th>Bid Amount</th>
@@ -16,5 +17,7 @@
         <td th:text="*{bid.bidAmount}">Amount</td>
     </tr>
 </table>
+
+<a href="/">Go back to Index</a>
 </body>
 </html>
