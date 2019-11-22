@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bids</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Bid ID</th>
+        <th>Bid Amount</th>
+    </tr>
+
+    <tr th:each="bid : *{userBidList}">
+        <td th:text="*{bid.bidId}">ID</td>
+        <td th:text="*{bid.bidAmount}">Amount</td>
+    </tr>
+</table>
+</body>
+</html>
