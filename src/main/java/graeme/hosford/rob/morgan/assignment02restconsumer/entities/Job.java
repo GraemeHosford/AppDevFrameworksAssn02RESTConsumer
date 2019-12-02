@@ -8,7 +8,8 @@ public class Job {
     private String jobDescription;
     private LocalDate jobPublishedDate;
 
-    public Job() {}
+    public Job() {
+    }
 
     public Job(long jobId, String jobName, String jobDescription, LocalDate jobPublishedDate) {
         this.jobId = jobId;

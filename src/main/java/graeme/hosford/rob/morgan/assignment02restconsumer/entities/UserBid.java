@@ -4,7 +4,8 @@ public class UserBid {
     private long bidId;
     private double bidAmount;
 
-    public UserBid() {}
+    public UserBid() {
+    }
 
     public UserBid(long bidId, double bidAmount) {
         this.bidId = bidId;
